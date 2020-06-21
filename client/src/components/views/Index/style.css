@@ -1,0 +1,253 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding: 10px 0;
+}
+
+.navbar .logo {
+	src: url();
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+
+.navbar ul.nav {
+	margin-right: 15%;
+}
+
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+
+.navbar ul.nav li a {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a {
+	color: #000;
+}
+
+.topnav .search-container {
+	float: right;
+}
+
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+	background: #ccc;
+}
+
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*slider*/
+#carouselExampleIndicators {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+#carouselExampleIndicators .carousel-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+
+#carouselExampleIndicators .carousel-inner:before {
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url('https://images.pexels.com/photos/412462/pexels-photo-412462.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+	background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+	background: url('https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item h1 {
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item p {
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/*ABOUT*/
+.unit-4 {
+	padding: 30px;
+	background: #f1f1f1;
+	border-radius: 5px;
+	-webkit-transition: .3s all ease;
+	-o-transition: .3s all ease;
+	transition: .3s all ease;
+	position: relative;
+	top: 0;
+	margin-bottom: 4em;
+	text-align: center;
+	padding-top: 50px; }
+	.unit-4 .unit-4-icon {
+	  position: absolute;
+	  -webkit-transform: translateX(-50%);
+	  -ms-transform: translateX(-50%);
+	  transform: translateX(-50%);
+	  left: 50%;
+	  top: -50px; }
+	  .unit-4 .unit-4-icon .icon-wrap {
+		width: 80px;
+		height: 80px;
+		position: relative;
+		border-radius: 50%;
+		display: inline-block;
+		background-color: #5e1e64;
+		-webkit-box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+		box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4); }
+		.unit-4 .unit-4-icon .icon-wrap span {
+		  font-size: 2rem;
+		  position: absolute;
+		  top: 50%;
+		  color: #fff !important;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%); }
+	.unit-4 h3 {
+	font-weight: bolder;
+	  font-size: 18px;
+	  color: #000;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease; }
+	.unit-4 p {
+	  font-weight: 300;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease; }
+	.unit-4 *:last-child {
+	  margin-bottom: 0; }
+	.unit-4:hover {
+	  background: #5e1e64;
+	  -webkit-box-shadow: 0 4px 20px -5px rgb(236, 156, 5);
+	  box-shadow: 0 4px 20px -5px rgba(244, 197, 66, 0.945);
+	  top: -7px; }
+	  .unit-4:hover .icon-wrap {
+		background-color: #fff; }
+		.unit-4:hover .icon-wrap span {
+		  color: rgb(236, 156, 5) !important; }
+	  .unit-4:hover h3 {
+		color: #fff; }
+	  .unit-4:hover p {
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.7); }
+		.unit-4:hover p a {
+		  color: #fff; }
+
+
+
+
+		  .h-entry img {
+			margin-bottom: 30px; }
+		  
+		  .h-entry .meta {
+			color: #b3b3b3;
+			font-size: 14px; }
+		  
+		  .h-entry h2 {
+			font-size: 20px; }
+		  
+			
+.section-title {
+	color: #000;
+	font-size: 40px;
+	font-weight: 900; }
+	@media (max-width: 991.98px) {
+	  .section-title {
+		font-size: 30px; } }
